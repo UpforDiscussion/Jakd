@@ -1,3 +1,5 @@
+User.delete_all
+Game.delete_all
 
 
 ['sarah', 'sally', 'jenny', 'francis'].each_with_index do |person, index|

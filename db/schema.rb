@@ -28,10 +28,10 @@ ActiveRecord::Schema.define(:version => 20121201163536) do
     t.string   "password_digest"
     t.string   "photo"
     t.integer  "account_balance",      :default => 1000
-    t.integer  "games_won"
-    t.integer  "games_lost"
-    t.integer  "lifetime_amount_won"
-    t.integer  "lifetime_amount_lost"
+    t.integer  "games_won",            :default => 0
+    t.integer  "games_lost",           :default => 0
+    t.integer  "lifetime_amount_won",  :default => 0
+    t.integer  "lifetime_amount_lost", :default => 0
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
   end
