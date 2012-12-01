@@ -31,7 +31,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # Process files as they are uploaded:
   # process :scale => [200, 300]
   process :resize_to_fill => [100, 100]# encoding: utf-8
-  
+
   # def scale(width, height)
   #   # do something
   # end
