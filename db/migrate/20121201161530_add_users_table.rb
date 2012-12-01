@@ -3,11 +3,12 @@ class AddUsersTable < ActiveRecord::Migration
         create_table :users do |t|
             t.string :username
             t.string :password_digest
-            t.integer :account_balance
-            t.integer :games_won
-            t.integer :games_lost
-            t.integer :lifetime_amount_won
-            t.integer :lifetime_amount_lost
+            t.string :photo
+            t.integer :account_balance, :default => 1000
+            t.integer :games_won, :default => 0
+            t.integer :games_lost, :default => 0
+            t.integer :lifetime_amount_won, :default => 0
+            t.integer :lifetime_amount_lost, :default => 0
             t.timestamps
         end
     end

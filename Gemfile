@@ -6,6 +6,15 @@ gem 'rails', '3.2.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'deck-of-cards'
+gem 'pg'
+gem 'pry-rails'
+gem 'jquery-rails'
+gem 'annotate'
+gem 'carrierwave'
+gem 'rmagick'
+gem 'bcrypt-ruby'
+gem 'fog'
 
 
 # Gems used only for assets and not required
