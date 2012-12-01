@@ -7,8 +7,13 @@ class UsersController < ApplicationController
       @profile = @auth
     end
   end
+
   def edit
   end
+
+  def create
+  end
+
   def update
     if @auth.update_attributes(params[:user])
       redirect_to profile_path
@@ -16,6 +21,7 @@ class UsersController < ApplicationController
       render :edit
     end
   end
+
   private
   def ensure_logged_in
     redirect_to root_path if @auth.nil?
