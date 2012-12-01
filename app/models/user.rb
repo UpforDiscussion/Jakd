@@ -16,8 +16,15 @@
 #
 
 class User < ActiveRecord::Base
-    has_and_belongs_to_many :games
+    belongs_to :game
     has_secure_password
 
-    mount_uploader :photo, AvatarUploader
+    mount_uploader :avatar, AvatarUploader
+    validates :username, :avatar, :presence => true
+    scope :online_users, where(:logged_in => true)
+
+    def set_login(status)
+        self.logged_in = status
+        self.save
+    end
 end
