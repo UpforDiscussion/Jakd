@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/superacidjax/deck-of-cards.git
+  revision: 07d168ef85beaf5a6d2fe56a2867d598c3e133b8
+  specs:
+    deck-of-cards (0.0.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -44,7 +50,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.4.0)
-    deck-of-cards (0.0.7)
     erubis (2.7.0)
     excon (0.16.10)
     execjs (1.4.0)
@@ -143,7 +148,7 @@ DEPENDENCIES
   bcrypt-ruby
   carrierwave
   coffee-rails (~> 3.2.1)
-  deck-of-cards
+  deck-of-cards!
   fog
   jquery-rails
   pg

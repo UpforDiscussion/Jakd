@@ -6,7 +6,7 @@ gem 'rails', '3.2.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'deck-of-cards'
+gem 'deck-of-cards', :git => 'https://github.com/superacidjax/deck-of-cards.git'
 gem 'pg'
 gem 'pry-rails'
 gem 'jquery-rails'
